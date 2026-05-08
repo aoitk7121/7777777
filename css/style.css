@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0d0d0d;
+  --bg-2: #111;
+  --border: #1a1a1a;
+  --border-2: #222;
+  --text: #e8e5e0;
+  --text-2: #c8c5c0;
+  --text-muted: #555;
+  --text-dim: #444;
+  --text-dimmer: #333;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border-2);
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo img { height: 36px; width: auto; }
+.nav-logo-text {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links { display: flex; gap: 2.5rem; }
+.nav-links a {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); }
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-logo { font-family: 'DM Serif Display', serif; font-size: 1rem; color: var(--text-dimmer); }
+.footer-tagline { font-size: 0.68rem; color: #2a2a2a; letter-spacing: 0.1em; margin-top: 4px; }
+.footer-socials { display: flex; gap: 1.5rem; }
+.footer-socials a {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-socials a:hover { color: var(--text); }
+
+.eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 1rem; }
+.section-label { font-size: 0.62rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 2rem; }
+
+@media (max-width: 600px) {
+  nav { padding: 0 1.2rem; }
+  .nav-links { gap: 1.2rem; }
+  .nav-links a { font-size: 0.65rem; }
+  footer { padding: 2rem 1.2rem; flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+}
