@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>about | 7777777</title>
   <link rel="stylesheet" href="../css/style.css">
-  <style>
-    .page-wrap { max-width: 720px; margin: 0 auto; padding: 5rem 2rem 6rem; }
-    .page-title { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; color: var(--text); margin-bottom: 3rem; }
-    .page-title em { font-style: italic; color: var(--text-muted); }
-    .body-text { font-size: 0.95rem; line-height: 2; color: var(--text-2); font-weight: 300; margin-bottom: 2rem; }
-    .divider { border: none; border-top: 1px solid var(--border); margin: 4rem 0; }
-    .section-title { font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: var(--text); margin-bottom: 1.5rem; }
-    .contact-links { display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
-    .contact-link { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; border: 1px solid var(--border-2); padding: 6px 16px; border-radius: 2px; transition: all 0.2s; }
-    .contact-link:hover { color: var(--text); border-color: #444; }
-    @media (max-width: 600px) { .page-wrap { padding: 3rem 1.2rem 4rem; } }
-  </style>
 </head>
 <body>
-  <nav>
-    <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="7777777" onerror="this.outerHTML='<span class=nav-logo-text>7777777</span>'"></a>
-    <div class="nav-links">
-      <a href="../index.html">home</a><a href="../article/index.html">article</a><a href="index.html">about</a><a href="#for-artist">for artist</a>
-    </div>
-  </nav>
 
-  <div class="page-wrap">
-    <div class="eyebrow">about</div>
-    <h1 class="page-title">7777777<br><em>とは。</em></h1>
+<nav>
+  <a href="../index.html" class="nav-logo">
+    <img src="../images/logo.png" alt="7777777" onerror="this.outerHTML='<span class=nav-logo-text>7777777</span>'">
+  </a>
+  <div class="nav-links">
+    <a href="../index.html">home</a>
+    <a href="../article/index.html">article</a>
+    <a href="index.html">about</a>
+    <a href="#for-artist">for artist</a>
+  </div>
+</nav>
 
-    <p class="body-text">
-      7777777は、アーティストのインタビューを掲載するプライベートメディアです。<br>
-      これからの時代を担う、名もなき才能たちと向き合い、その声を届けます。
+<div class="about-hero">
+  <div class="about-hero-inner">
+    <div class="about-tag">about</div>
+    <h1 class="about-headline">
+      private media<br>
+      7777777<br>
+      since — 2025 Spring
+    </h1>
+  </div>
+</div>
+
+<div class="about-body">
+  <p class="about-text-ja">
+    7777777は、アーティストのインタビューを掲載するプライベートメディアです。<br>
+    新進気鋭のアーティストやクリエイターを、独自のキュレーションで注目していきます。<br>
+    インタビュー、ライブイベント企画、アーティストとのコラボレーションを通じて、<br>
+    音楽と人をつなぐ場所をつくっていきます。
+  </p>
+  <p class="about-director">director : ko shinonome（文藝天国）</p>
+
+  <hr class="about-divider">
+
+  <p class="about-text-en">
+    7777777 is an independent media platform dedicated to exclusive artist interviews.<br>
+    We shine a spotlight on emerging artists and creators through our unique curation.<br>
+    Through interviews, live event production, and artist collaborations,<br>
+    we strive to build a space where music and people connect.
+  </p>
+
+  <div style="margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--border);" id="for-artist">
+    <h2 style="font-size: 1.4rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 1.2rem;">for artist</h2>
+    <p style="font-size: 0.95rem; line-height: 2; color: #333; margin-bottom: 1.5rem;">
+      インタビューへの出演をご希望のアーティスト、<br>
+      またはコラボレーションのご提案はSNSのDMよりご連絡ください。
     </p>
-    <p class="body-text">
-      インタビュー、ライブイベントの企画、アーティストとのコラボレーションを通じて、
-      音楽と人をつなぐ場所をつくっていきます。
-    </p>
-
-    <hr class="divider" id="for-artist">
-
-    <div class="section-title">for artist</div>
-    <p class="body-text">
-      インタビューへの出演をご希望のアーティスト、またはコラボレーションのご提案は、
-      SNSのDMよりご連絡ください。
-    </p>
-    <div class="contact-links">
-      <a class="contact-link" href="https://www.instagram.com/7777777japan" target="_blank" rel="noopener">Instagram DM</a>
-      <a class="contact-link" href="https://www.twitter.com/7777777japan" target="_blank" rel="noopener">X DM</a>
+    <div class="for-artist-links">
+      <a class="for-artist-link" href="https://www.instagram.com/7777777japan" target="_blank">Instagram DM</a>
+      <a class="for-artist-link" href="https://www.twitter.com/7777777japan" target="_blank">X DM</a>
     </div>
   </div>
+</div>
 
-  <footer>
+<footer>
+  <div class="footer-inner">
     <div><div class="footer-logo">7777777</div><div class="footer-tagline">private media of up and coming artist</div></div>
-    <div class="footer-socials"><a href="https://www.instagram.com/7777777japan" target="_blank">Instagram</a><a href="https://www.twitter.com/7777777japan" target="_blank">X</a></div>
-  </footer>
+    <div class="sns-links">
+      <a class="sns-btn" href="https://www.instagram.com/7777777japan" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
+      <a class="sns-btn" href="https://www.twitter.com/7777777japan" target="_blank"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
